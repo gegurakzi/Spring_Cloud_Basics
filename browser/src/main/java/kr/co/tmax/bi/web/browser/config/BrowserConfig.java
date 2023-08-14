@@ -1,4 +1,4 @@
-package kr.co.tmax.bi.web.user.config;
+package kr.co.tmax.bi.web.browser.config;
 
 import io.micrometer.observation.ObservationRegistry;
 import io.micrometer.observation.aop.ObservedAspect;
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
 @Configuration
-public class UserConfig {
+public class BrowserConfig {
 
     @Bean
     RestTemplate restTemplate(RestTemplateBuilder builder) {

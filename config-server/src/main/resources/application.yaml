@@ -9,4 +9,4 @@ spring:
         git:
           uri: https://github.com/gegurakzi/Spring_Cloud_Basics
           searchPaths: config
-          default-label: feature/malachai/application-settings
+          default-label: feature/malachai/user-service-init
