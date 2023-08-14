@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: user
+  profiles:
+    active: dev
+  config:
+    import: configserver:http://localhost:8888
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/example?serverTimezone=UTC&characterEncoding=UTF-8
+    username: tmax
+    password: tmax
