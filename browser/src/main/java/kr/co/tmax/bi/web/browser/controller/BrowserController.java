@@ -1,7 +1,7 @@
 package kr.co.tmax.bi.web.browser.controller;
 
-import kr.co.tmax.bi.web.browser.dto.UserData;
-import kr.co.tmax.bi.web.browser.dto.UserRegister;
+import kr.co.tmax.bi.web.common.dto.UserData;
+import kr.co.tmax.bi.web.common.dto.UserRegister;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

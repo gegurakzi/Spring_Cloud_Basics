@@ -1,14 +1,14 @@
-package kr.co.tmax.bi.web.browser.dto;
+package kr.co.tmax.bi.web.common.dto;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.sql.Timestamp;
 
 @NoArgsConstructor
 @Getter
 @Setter
+@EqualsAndHashCode
+@ToString
 public class UserData {
 
     private Integer userId;

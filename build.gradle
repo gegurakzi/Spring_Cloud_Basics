@@ -41,9 +41,11 @@ subprojects {
     }
 
     dependencies {
+        implementation 'org.springframework.boot:spring-boot-starter-web'
         compileOnly 'org.projectlombok:lombok'
         annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
         annotationProcessor 'org.projectlombok:lombok'
+        testImplementation 'org.springframework.boot:spring-boot-starter-test'
     }
 
     test {
@@ -68,7 +70,7 @@ project(':common') {
 
     }
     jar {
-        enabled = false
+        enabled = true
     }
     bootJar {
         enabled = false
