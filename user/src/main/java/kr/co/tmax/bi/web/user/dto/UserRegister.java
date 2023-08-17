@@ -16,7 +16,7 @@ public class UserRegister {
     private String userName;
     @NonNull
     private String password;
-    @Nullable
+    @NonNull
     private String email;
 
     public UserRegister fromEntity(User user) {

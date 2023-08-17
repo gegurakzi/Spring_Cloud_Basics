@@ -1,0 +1,4 @@
+rootProject.name = 'spring-cloud-basic'
+include 'core', 'common'
+include 'browser', 'article', 'board', 'user'
+include 'config-server', 'discovery-server'

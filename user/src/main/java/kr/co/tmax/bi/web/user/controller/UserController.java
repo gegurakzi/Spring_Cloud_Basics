@@ -11,8 +11,10 @@ import org.springframework.web.bind.annotation.*;
 public interface UserController {
 
     @RequestMapping(method = RequestMethod.GET, value = "/{userId}")
-    ResponseEntity<UserData> getUser(@PathVariable Integer userId);
+    ResponseEntity<UserData> findByUserId(@PathVariable Integer userId);
     @RequestMapping(method = RequestMethod.POST, value = "/")
-    ResponseEntity<Void> addUser(@RequestBody UserRegister user);
+    ResponseEntity<Void> insert(@RequestBody UserRegister user);
+    @RequestMapping(method = RequestMethod.PUT, value = "/")
+    ResponseEntity<Void> updateByUserId(@RequestBody UserData user);
 
 }

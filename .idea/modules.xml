@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/spring-cloud-basic.iml" filepath="$PROJECT_DIR$/.idea/spring-cloud-basic.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/user.main.iml" filepath="$PROJECT_DIR$/.idea/modules/user.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/article/spring-cloud-basic.article.main.iml" filepath="$PROJECT_DIR$/.idea/modules/article/spring-cloud-basic.article.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/board/spring-cloud-basic.board.main.iml" filepath="$PROJECT_DIR$/.idea/modules/board/spring-cloud-basic.board.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/browser/spring-cloud-basic.browser.main.iml" filepath="$PROJECT_DIR$/.idea/modules/browser/spring-cloud-basic.browser.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/spring-cloud-basic.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/spring-cloud-basic.common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/config-server/spring-cloud-basic.config-server.main.iml" filepath="$PROJECT_DIR$/.idea/modules/config-server/spring-cloud-basic.config-server.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/discovery-server/spring-cloud-basic.discovery-server.main.iml" filepath="$PROJECT_DIR$/.idea/modules/discovery-server/spring-cloud-basic.discovery-server.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/user/spring-cloud-basic.user.main.iml" filepath="$PROJECT_DIR$/.idea/modules/user/spring-cloud-basic.user.main.iml" />
     </modules>
   </component>
 </project>

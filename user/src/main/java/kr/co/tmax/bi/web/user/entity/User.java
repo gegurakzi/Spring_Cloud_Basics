@@ -20,7 +20,7 @@ public class User {
     private String userName;
     @NonNull
     private String password;
-    @Nullable
+    @NonNull
     private String email;
     @NonNull
     private Timestamp creation;

@@ -37,7 +37,7 @@ public class UserRepository implements UserController {
 
     @Override
     @Observed(name = "user.add-user")
-    public ResponseEntity<UserData> getUser(Integer userId) {
+    public ResponseEntity<UserData> findByUserId(Integer userId) {
         final MapSqlParameterSource namedParameters = new MapSqlParameterSource()
                 .addValue("userId", userId);
         LOG.info("getUser() Called: " + userId);
@@ -52,10 +52,21 @@ public class UserRepository implements UserController {
 
     @Override
     @Observed(name = "user.get-user")
-    public ResponseEntity<Void> addUser(UserRegister user) throws DataAccessException {
+    public ResponseEntity<Void> insert(UserRegister user) throws DataAccessException {
         final MapSqlParameterSource namedParameters = new MapSqlParameterSource()
                 .addValue("userName", user.getUserName())
                 .addValue("password", user.getPassword())
+                .addValue("email", user.getEmail());
+        jdbc.update(
+                "INSERT INTO users(user_name, password, email) VALUES (:userName, :password, :email);",
+                namedParameters);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @Override
+    public ResponseEntity<Void> updateByUserId(UserData user) {
+        final MapSqlParameterSource namedParameters = new MapSqlParameterSource()
+                .addValue("userName", user.getUserName())
                 .addValue("email", user.getEmail());
         jdbc.update(
                 "INSERT INTO users(user_name, password, email) VALUES (:userName, :password, :email);",

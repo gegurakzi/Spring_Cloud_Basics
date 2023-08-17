@@ -1,3 +1,6 @@
 gradle-wrapper*
 gradle-wrapper.jar
 gradlew*
+*/gradle/*
+.gradle/*
+build/*
